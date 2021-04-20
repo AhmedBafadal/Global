@@ -4,11 +4,6 @@ Solution was built using Django and has also been containerized using Docker & D
 
 Further, to prepopulate data for convenience of your review django-extensions was utilsed to upload relevant data and can be found in the "scripts" module. Model serializers have been included for conversion between content types. To ensure the database functionality, "management commands" (wait_for_db found in core/management/commands) were developed to wait for the database to be ready before use. 
 
-
-Upon the below install and run command, the code will automatically read and serialize the json track data, as well as run the server.
-To upload an xml file, please access /upload endpoint, to view countries please use /book and /admin to delete any records.
-There were challenges mostly in containerization, as i did not expect django rest framework to have a few bugs in process.
-
 # Installation
 ```
 docker build .
